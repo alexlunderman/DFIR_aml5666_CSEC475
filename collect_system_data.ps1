@@ -3,6 +3,7 @@
 #Set-Content -Path "C:\User\Alex\Desktop\test.txt" -Value "my test" -Force
 
 #Get the PC Uptime
+function Get-Uptime {
   $date = Get-Date
   $timeZone = Get-TimeZone
   $os = Get-WmiObject win32_operatingsystem
